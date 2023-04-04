@@ -1,38 +1,50 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+body {
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 21%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.app{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-name {
+  color: #000;
+  font-size: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: #fff;
+  transition: 1s ease-in;
+  min-width: 200px;
+  box-shadow: 0px 0px 17px rgb(197 197 197);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  scale: 1;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-title{
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Bigelow Rules', cursive;
+}
+.card:hover {
+  scale: 1.06;
+  transition: 0.5s ease-in-out;
+}
+.card-list {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.search {
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.monster-img {
+  width: 150px;
 }
